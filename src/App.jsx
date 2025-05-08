@@ -6,7 +6,7 @@ import { Pagination } from "./Pagination";
 function App() {
   const [currentPage, setCurrentPage] = useState(1);
 
-  const pageCount = 10;
+  const pageCount = 60;
 
   function handlePageChanged(pageNumber) {
     // TO DO
