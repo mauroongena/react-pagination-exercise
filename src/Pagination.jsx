@@ -42,6 +42,14 @@ export function Pagination({ currentPage, pageCount, onPageChanged }) {
         pages.push(<li key="dots-end">…</li>);
         pages.push(createPageButton(pageCount));
 
+      } else if (currentPage === (pageCount - 3)) {
+        pages.push(createPageButton(1));
+        pages.push(<li key="dots-start">…</li>);
+
+        for (let i = pageCount - 3; i <= pageCount; i++) {
+          pages.push(createPageButton(i));
+        }
+
       } else if (currentPage >= pageCount - 2) {
         pages.push(createPageButton(1));
         pages.push(<li key="dots-start">…</li>);
