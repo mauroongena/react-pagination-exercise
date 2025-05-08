@@ -10,6 +10,8 @@ function App() {
 
   function handlePageChanged(pageNumber) {
     // TO DO
+    setCurrentPage(pageNumber);
+    console.log("Current page:", pageNumber);
   }
 
   return (
